@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 });
 
 // Route untuk menangani upload
-app.post('/upload', upload.single('mp3'), (req, res) => {
+app.post('/upload.html', upload.single('mp3'), (req, res) => {
     const title = req.body.title;
     const mp3File = req.file;
 
